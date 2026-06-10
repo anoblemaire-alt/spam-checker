@@ -13,7 +13,7 @@ const CACHE_TTL = parseInt(process.env.CACHE_TTL || "3600") * 1000;
 
 // ─── Middlewares ─────────────────────────────────────────────────────────────
 
-app.use(cors({ origin: ["http://localhost:5173", "http://localhost:3000"] }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 const limiter = rateLimit({
