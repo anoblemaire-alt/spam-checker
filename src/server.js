@@ -8,7 +8,7 @@ const { checkOrange } = require("./connectors/orange");
 const { checkNumeroinconnu } = require("./connectors/numeroinconnu");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 100000;
 const CACHE_TTL = parseInt(process.env.CACHE_TTL || "3600") * 1000;
 
 // ─── Middlewares ─────────────────────────────────────────────────────────────
